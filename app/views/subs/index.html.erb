@@ -1,0 +1,8 @@
+<h2>Reddit!</h2>
+<br>
+<ol>
+<% @subs.each do |sub| %>
+  <li><%= link_to sub.title, sub_url(sub) %></li>
+  <br>
+<% end %>
+</ol>
